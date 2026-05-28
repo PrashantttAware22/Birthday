@@ -1079,7 +1079,7 @@ audio {
 ========================= */
 
 .balloons {
-	position: fixed;
+	position: absolute;
 	bottom: -200px;
 
 	width: 100px;
@@ -1116,24 +1116,62 @@ audio {
 
 @media (max-width: 400px) {
 
+	/* Main balloon style */
+
 	.balloons {
+		position: absolute !important;
 
-		width: 45px;
-		height: 82px;
+		width: 42px !important;
+		height: 72px !important;
 
-		background-size: contain;
+		background-size: contain !important;
+		background-repeat: no-repeat !important;
+
+		margin-left: 30px !important;
 	}
+
+	/* Balloon letters */
 
 	.balloons h2 {
+		font-size: 14px !important;
+		margin-top: 18px !important;
+	}
 
-		font-size: 16px;
+	/* MOBILE POSITIONS */
 
-		margin-top: 20px;
+	#b1 {
+		left: 10px !important;
+	}
 
-		text-shadow: 2px 2px 3px #FFF;
+	#b2 {
+		left: 70px !important;
+	}
+
+	#b3 {
+		left: 130px !important;
+	}
+
+	#b4 {
+		left: 190px !important;
+	}
+
+	#b5 {
+		left: 250px !important;
+	}
+
+	#b6 {
+		left: 310px !important;
+	}
+
+	/* Stop rotation */
+
+	.balloons-rotate-behaviour-one,
+	.balloons-rotate-behaviour-two {
+
+		animation: none !important;
+		transform: rotate(0deg) !important;
 	}
 }
-
 
 #b1,#b11 {
 	background-image: url('b1.png');
