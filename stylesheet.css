@@ -1300,7 +1300,7 @@ audio {
         background-color: #466baf;
     }
 
-@media (min-width:400px) {
+@media (width:400px) {
 	.balloons {
 		width: 80px;
 	}
