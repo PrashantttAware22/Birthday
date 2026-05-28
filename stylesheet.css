@@ -1056,7 +1056,7 @@ audio {
 	100% {
 		-ms-transform:translate(0px,0px);
 	}
-}o
+}
 @keyframes bannar_come {
 	0%{
 		transform:translate(0px,-1000px);
@@ -1300,7 +1300,11 @@ audio {
         background-color: #466baf;
     }
 
-
+@media (min-width:400px) {
+	.balloons {
+		width: 80px;
+	}
+}
 
     /*controlling tablet width*/
     /*@media only screen and (max-width: 720px){
