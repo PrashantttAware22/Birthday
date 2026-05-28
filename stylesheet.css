@@ -1074,41 +1074,64 @@ audio {
 		transform:translate(0px,0px);
 	}
 }
+/* =========================
+   BALLOONS
+========================= */
 
 .balloons {
 	position: fixed;
-	margin-left: 50px;
 	bottom: -200px;
-	opacity: 0.6;
-	z-index: 99;
+
 	width: 100px;
 	height: 183px;
-	background-repeat: no-repeat no-repeat;
-	background-size: 100px 183px;
+
+	opacity: 0.8;
+	z-index: 2;
+
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
 }
+
+/* Balloon Letters */
+
 .balloons h2 {
 	text-transform: uppercase;
 	font-family: 'Signika', sans-serif;
-	font-size: 50px;
+
+	font-size: 42px;
 	color: #BF4136;
-	text-shadow: 5px 5px 5px #FFF;
+
+	text-shadow: 3px 3px 5px #FFF;
+
+	text-align: center;
+	margin-top: 45px;
+
 	display: none;
 }
+
+/* =========================
+   MOBILE RESPONSIVE
+========================= */
+
 @media (max-width: 400px) {
+
 	.balloons {
-		width: 50px;
-		height: 50px;
-		/* background-size: 50px 90px; */
-		/* margin-left: 0; */
+
+		width: 45px;
+		height: 82px;
+
+		background-size: contain;
 	}
+
 	.balloons h2 {
-	text-transform: uppercase;
-	font-family: 'Signika', sans-serif;
-	font-size: 18px;
-	color: #BF4136;
-	text-shadow: 5px 5px 5px #FFF;
-	display: none;
-}
+
+		font-size: 16px;
+
+		margin-top: 20px;
+
+		text-shadow: 2px 2px 3px #FFF;
+	}
 }
 
 
